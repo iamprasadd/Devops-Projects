@@ -50,8 +50,8 @@ module "alb_asg" {
 
   db_endpoint = module.rds.db_endpoint
   db_port = module.rds.db_port
-  db_name = "appdb"
-  db_username  = "appuser"
+  db_name = module.rds.db_name
+  db_username  = module.rds.db_username
   db_password = var.db_password
 
 }
@@ -67,6 +67,7 @@ module "rds" {
   db_username  = "appuser"
   db_password = var.db_password
 }
+
 
 
 output "alb_dns_name" {
