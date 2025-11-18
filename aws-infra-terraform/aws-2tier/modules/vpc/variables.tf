@@ -1,9 +1,9 @@
 variable "region" {
   type = string
-  
+
 }
 variable "profile" {
-  type = string
+  type    = string
   default = null
 }
 variable "project" {

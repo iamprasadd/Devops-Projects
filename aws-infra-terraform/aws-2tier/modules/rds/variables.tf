@@ -88,26 +88,26 @@ variable "storage_encrypted" {
 }
 
 variable "backup_retention_period" {
-  type        = number
-  default     = 7
+  type    = number
+  default = 7
 }
 
 variable "backup_window" {
-  type        = string
-  default     = "03:00-04:00"
+  type    = string
+  default = "03:00-04:00"
 }
 
 variable "maintenance_window" {
-  type        = string
-  default     = "mon:04:00-mon:05:00"
+  type    = string
+  default = "mon:04:00-mon:05:00"
 }
 
 variable "deletion_protection" {
-  type        = bool
-  default     = false
+  type    = bool
+  default = false
 }
 
 variable "skip_final_snapshot" {
-  type        = bool
-  default     = true
+  type    = bool
+  default = true
 }

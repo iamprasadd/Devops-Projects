@@ -10,7 +10,7 @@ output "app_route_table_ids" {
 }
 output "data_route_table_ids" {
   value = [for drt in aws_route_table.data_rt : drt.id]
-}   
+}
 output "nat_eip_ids" {
   value = [for eip in aws_eip.nat : eip.id]
 }

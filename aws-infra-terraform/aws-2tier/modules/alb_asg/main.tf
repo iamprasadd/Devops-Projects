@@ -23,7 +23,7 @@ resource "aws_lb" "app_alb" {
 
   tags = {
     Project = var.project
-    
+
   }
 }
 
@@ -84,7 +84,7 @@ resource "aws_iam_role" "ec2_instance_role" {
   assume_role_policy = data.aws_iam_policy_document.ec2_assume_role_policy.json
   tags = {
     Project = var.project
-    
+
   }
 }
 
@@ -173,7 +173,7 @@ resource "aws_launch_template" "app_launch_template" {
   user_data = base64encode(local.user_data_final)
 
   network_interfaces {
-    security_groups = [var.app_sg_id]
+    security_groups             = [var.app_sg_id]
     associate_public_ip_address = true
   }
 
@@ -181,7 +181,7 @@ resource "aws_launch_template" "app_launch_template" {
     resource_type = "instance"
     tags = {
       Project = var.project
-   
+
     }
   }
 }

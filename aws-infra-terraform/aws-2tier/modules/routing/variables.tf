@@ -4,7 +4,7 @@ variable "vpc_id" {
 variable "project" {
   type = string
 }
-variable igw_id {
+variable "igw_id" {
   type = string
 }
 variable "public_subnet_ids" {

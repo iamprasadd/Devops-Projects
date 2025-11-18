@@ -20,50 +20,50 @@ variable "app_sg_id" {
 }
 
 variable "instance_type" {
-  type = string
+  type    = string
   default = "t3.micro"
 }
 
 variable "key_name" {
-  type = string
+  type    = string
   default = null
 }
 
 variable "min_size" {
   type = number
-  
+
 }
 variable "max_size" {
   type = number
- 
+
 }
 variable "desired_size" {
   type = number
-  
+
 }
 variable "user_data" {
-  type = string
+  type    = string
   default = ""
 }
 
 variable "db_endpoint" {
-  type = string
+  type    = string
   default = ""
 }
 variable "db_port" {
-  type = number
+  type    = number
   default = 3306
 }
 variable "db_name" {
-  type = string
+  type    = string
   default = ""
 }
 variable "db_username" {
-  type = string
+  type    = string
   default = ""
 }
 variable "db_password" {
-  type = string
+  type      = string
   sensitive = true
-  default = ""
+  default   = ""
 }

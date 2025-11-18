@@ -1,7 +1,7 @@
 module "vpc" {
-  source = "../../modules/vpc"
-    project = var.project
-    vpc_cidr = var.vpc_cidr
+  source   = "../../modules/vpc"
+  project  = var.project
+  vpc_cidr = var.vpc_cidr
 }
 
 output "vpc_id" {
