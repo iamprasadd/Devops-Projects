@@ -1,6 +1,6 @@
 # Terraform AWS 3‑Tier Web Application Infrastructure
 
-This repository contains a production‑grade **AWS 3‑Tier Architecture** fully automated using **Terraform**. The project implements networking, security, compute, load balancing, RDS, Route53, ACM, and CI/CD with GitHub Actions.
+This repository contains a production‑grade **AWS 3‑Tier Architecture** fully automated using **Terraform**. The project implements networking, security, compute, load balancing, RDS, and CI/CD with GitHub Actions.
 
 ## 🏗️ Architecture Overview
 
@@ -31,7 +31,7 @@ The deployed 3‑tier application follows this layered structure:
 
 ## 📸 Architecture Diagram
 
-![Architecture](./.images/3tier-web-application-architecture.png)
+![Architecture](/aws-infra-terraform/.images/3tier-web-application-architecture.png)
 
 ---
 
